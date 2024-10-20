@@ -1,1 +1,0 @@
-# JhonnatanAriasPinedaoptimizado.github.io
