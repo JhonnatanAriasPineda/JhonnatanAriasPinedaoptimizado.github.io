@@ -1,0 +1,196 @@
+@charset "UTF-8";
+/* Estilo global para dispositivos móviles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+/* Header y navegación */
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(135deg, #e9dacd, #ffffff);
+  color: #000000;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+.arriba {
+  display: flex;
+  padding: 5px;
+  background-color: #f0f0f0;
+  margin: 0 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: end;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Voratex {
+  flex: 1;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.menu-contenido {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.menu-contenido a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.menu-contenido a:hover {
+  background-color: #ddd;
+}
+
+.menu:hover .menu-contenido {
+  display: block;
+}
+
+/* Main content */
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+.Principal {
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+  border: 0px solid #ccc;
+  padding: 10px;
+}
+
+.Principal p {
+  white-space: normal;
+  text-overflow: clip;
+}
+
+/* Estilos responsivos para imágenes */
+.cascada {
+  display: flex;
+  flex-direction: column; /* Cambia la dirección a columnas para pantallas pequeñas */
+  height: auto; /* Ajusta la altura de manera automática */
+}
+
+.cascada img {
+  width: 100%; /* Las imágenes ocuparán todo el ancho disponible */
+  height: auto; /* Mantén la proporción */
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.imagenes {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las imágenes se adapten en filas */
+  justify-content: center; /* Centra las imágenes */
+  gap: 10px;
+}
+
+.imagenes img {
+  width: 100%;
+  max-width: 250px; /* Máximo ancho para que no se estire en pantallas grandes */
+  height: auto;
+  margin: 5px;
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 8px;
+}
+
+.imagenes img:hover {
+  transform: scale(1.1);
+}
+
+.precio {
+  display: block;
+  margin-top: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Leyenda */
+.leyenda {
+  text-align: center;
+}
+
+.leyenda p {
+  font-family: "Lobster", cursive;
+  font-style: italic;
+  color: rgb(92, 91, 30);
+  font-size: 30px; /* Tamaño de fuente ajustable */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(135deg, #e9dacd, #ffffff);
+  color: #000000;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px 0;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column; /* Coloca los elementos de la barra de navegación en columnas */
+    align-items: center; /* Centra los elementos en móviles */
+  }
+  .arriba {
+    flex-direction: column; /* Los elementos dentro de .arriba también en columna */
+  }
+  .Principal {
+    width: 90%; /* Reduce el ancho en móviles */
+  }
+  .imagenes img {
+    width: 100%; /* Las imágenes ocuparán todo el ancho del contenedor */
+  }
+  .leyenda p {
+    font-size: 24px; /* Ajusta el tamaño de la leyenda en móviles */
+  }
+  .cascada {
+    flex-direction: column;
+    height: auto;
+  }
+  .cascada img {
+    width: 100%;
+  }
+}/*# sourceMappingURL=styles.css.map */
