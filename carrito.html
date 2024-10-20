@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="styles_carrito.css">
+</head>
+<body>
+
+    <header></header>
+        <nav>
+            <ul>
+                <li class="nav-item">
+                    <a class="Voratex">Voratex S.A.S</a>
+                    <a class="Return" href="index.html">Página Principal</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Carrito de Compras</h1>
+    <div id="carrito"></div>
+    <button onclick="vaciarCarrito()">Vaciar Carrito</button>
+    <a href="pago.html">Ir a Pagar</a>
+
+    <script>
+        function cargarCarrito() {
+            let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+            let carritoDiv = document.getElementById('carrito');
+            carritoDiv.innerHTML = '';
+
+            if (carrito.length === 0) {
+                carritoDiv.innerHTML = '<p>No hay productos en el carrito.</p>';
+            } else {
+                carrito.forEach((producto, index) => {
+                    carritoDiv.innerHTML += `
+                        <div class="cart-item">
+                            <img src="${producto.imagen}" alt="${producto.nombre}" class="cart-img">
+                            <p>${producto.nombre} - $${producto.precio}</p>
+                            <button onclick="eliminarProducto(${index})">Eliminar</button>
+                        </div>
+                    `;
+                });
+            }
+        }
+
+        function eliminarProducto(index) {
+            let carrito = JSON.parse(localStorage.getItem('carrito'));
+            carrito.splice(index, 1);
+            localStorage.setItem('carrito', JSON.stringify(carrito));
+            cargarCarrito();
+        }
+
+        function vaciarCarrito() {
+            localStorage.removeItem('carrito');
+            cargarCarrito();
+        }
+
+        window.onload = cargarCarrito;
+    </script>
+</body>
+</html>

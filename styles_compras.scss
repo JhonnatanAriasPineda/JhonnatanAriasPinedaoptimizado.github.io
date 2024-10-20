@@ -1,0 +1,58 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;  /* Permite que los productos se ajusten en filas si el espacio es insuficiente */
+    justify-content: space-around;  /* Espacio entre los productos */
+}
+
+.productos {
+    width: 300px;  /* Ajusta el ancho de cada producto */
+    margin-bottom: 40px;
+    text-align: center;  /* Centra el contenido */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.productos img {
+    margin: 5px; /* Añade un margen de 5px alrededor de cada imagen */
+    display: inline-block; /* Asegura que las imágenes se comporten como elementos en línea */
+    transition: transform 0.3s ease-in-out; /* suaviza la transición */
+    border-radius: 8px;
+}
+
+.productos img:hover{
+    transform: scale(1.2); /* Aumenta el tamaño de la imagen en un al pasar el cursor*/
+}
+
+.productos-img {
+    width: 95%;  /* La imagen ocupa el 95% del ancho del contenedor */
+    max-width: 500px;  /* El máximo ancho será de 500px */
+    height: 300px;  /* Mantiene la proporción de la imagen */
+    margin-bottom: 10px;  /* Añade un espacio debajo de la imagen */
+}
+
+.productos h2 {
+    font-size: 20px; /*Tamaño de letra */
+    margin: 5px 0; /*Margen entre la imagen y la letra*/
+}
+
+.productos p {
+    font-size: 18px; /*Tamaño del precio del producto*/
+    margin: 5px 0; /*Margen entre el precio y el nombre del producto*/
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+

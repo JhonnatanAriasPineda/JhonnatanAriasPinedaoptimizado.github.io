@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+header {
+    position: -webkit-sticky; /* Para navegadores basados en WebKit */
+    position: sticky; /* Fija el header en la parte superior cuando se desplaza */
+    top: 0; /* Alinea el header en la parte superior */
+    width: 100%; /* Asegura que el header ocupe todo el ancho de la pantalla */
+    background: linear-gradient(135deg, #e9dacd, #ffffff);
+    color: #000000;
+    padding: 10px 0; /* Espaciado interno del header */
+    z-index: 1000; /* Asegura que el header esté por encima del contenido */
+}
+
+nav ul {
+    list-style: none;
+    display: center;
+    justify-content: end;
+    padding: 0;                                                                                                     
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Voratex {
+    flex: 1; /* Ocupa el espacio restante entre los elementos */
+    text-align: center; /* Centra el texto "Voratex S.A.S" */
+    font-weight: bold;
+    text-decoration: none; /* Elimina el subrayado */
+}
+
+.Return {
+    text-decoration: none; /* Elimina el subrayado */
+    font-weight: bold;
+    /*color: #007bff; /* Color del texto */
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.info-section {
+    display: flex;
+    justify-content: space-between; /* Distribuye el texto y la imagen a los extremos */
+    align-items: center; /* Centra verticalmente */
+    padding: 20px;
+}
+
+/* Estilo para el contenido del texto */
+.text-content {
+    flex: 1; /* Ocupa el espacio restante */
+    margin-right: 20px; /* Espacio entre el texto y la imagen */
+}
+
+
+form {
+    display: inline-block;
+    text-align: left;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background: linear-gradient(135deg, #e9dacd, #ffffff);
+    color: #000000;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}

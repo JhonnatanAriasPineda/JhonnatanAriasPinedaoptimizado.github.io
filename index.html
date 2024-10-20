@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voratex S.A.S</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles_compras.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="menu">
+                    <a class="menubtn">Nosotros</a>
+                    <div class="menu-contenido">
+                        <a href="nosotros.html">Quienes Somos</a>
+                    </div>
+                </li>
+                
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="Carrito.html">Ver Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="Principal">
+            <li>
+                <h1>VORATEX S.A.S</h1>
+                <p>Dirigimos nuestros esfuerzos a la creación de prendas inspiradas en la personalidad estilo de vida de nuestros clientes, 
+                    con la mejor relación Look - Precio - Calidad - Actualidad.</p>
+            </li>
+        </div> 
+
+        <div class="Principal">
+            <li>
+                <h1>Nuestros Insumos</h1>
+                <p>Las telas que nosotros manejamos en nuestra empresa son de la mejor calidad y precio que existe en el mercado</p>
+            </li>
+        </div>
+
+
+        <div class="container"> 
+            <div class="contenedor-imagenes">
+                <section class="imagenes">
+                    <img loading="lazy" src="imagenes/textil1.jpg" alt="Textil1">
+                    <img loading="lazy" src="imagenes/textil2.jpg" alt="Textil2">
+                    <img loading="lazy" src="imagenes/textil3.jpg" alt="Textil3">
+                    <img loading="lazy" src="imagenes/textil4.jpg" alt="Textil4">
+                    <img loading="lazy" src="imagenes/textil5.jpg" alt="Textil5">
+                </section>
+            </div>
+        </div>
+
+        <div class="Principal">
+            <li>
+                <h1>Prendas Confeccionadas</h1>
+                <p>Nuestra gran calidad y tu creatividad nos sorprende con la variación</p>
+            </li>
+        </div>
+
+
+
+        <div class="container">
+            <div class="productos">
+                <img loading="lazy" src="imagenes/vestir1.jfif" alt="Producto 1" class="productos-img">
+                <h2>Camisa Polo Hombre (Cafe)</h2>
+                <p>Precio: $ 142.000</p>
+                <button onclick="agregarProducto('Camisa Polo Hombre (Cafe)', 142000, 'imagenes/vestir1.jfif')">Agregar al carrito</button>
+            </div>
+    
+            <div class="productos">
+                <img loading="lazy" src="imagenes/vestir2.jpg" alt="Producto 2" class="productos-img">
+                <h2>Chaqueta Hombre (Verde)</h2>
+                <p>Precio: $ 275.000</p>
+                <button onclick="agregarProducto('Chaqueta Hombre (Verde)', 275000, 'imagenes/vestir2.jpg')">Agregar al carrito</button>
+            </div>
+    
+            <div class="productos">
+                <img loading="lazy" src="imagenes/vestir3.jpg" alt="Producto 3" class="productos-img">
+                <h2>Gában Hombre (Negro)</h2>
+                <p>Precio: $ 925.000</p>
+                <button onclick="agregarProducto('Gában Hombre (Negro)', 925000, 'imagenes/vestir3.jpg')">Agregar al carrito</button>
+            </div>
+
+            <div class="productos">
+                <img loading="lazy" src="imagenes/vestir4.jpg" alt="Producto 4" class="productos-img">
+                <h2>Chaleco Hombre (Negro)</h2>
+                <p>Precio: $ 210.000</p>
+                <button onclick="agregarProducto('Chaleco Hombre (Negro)', 210000, 'imagenes/vestir4.jpg')">Agregar al carrito</button>
+            </div>
+
+            <div class="productos">
+                <img loading="lazy" src="imagenes/vestir5.jpg" alt="Producto 5" class="productos-img">
+                <h2>Polo Hombre (Blanco)</h2>
+                <p>Precio: $ 142.000</p>
+                <button onclick="agregarProducto('Polo Hombre (Blanco)', 30, 'imagenes/vestir5.jpg')">Agregar al carrito</button>
+            </div>
+
+            <div class="productos">
+                <img loading="lazy" src="imagenes/vestir6.jfif" alt="Producto 6" class="productos-img">
+                <h2>Polo Hombre (Negro)</h2>
+                <p>Precio: $ 142.000</p>
+                <button onclick="agregarProducto('Polo Hombre (Negro)', 142000, 'imagenes/vestir6.jfif')">Agregar al carrito</button>
+            </div>
+
+            <div class="productos">
+                <img loading="lazy" src="imagenes/vestir7.jpg" alt="Producto 7" class="productos-img">
+                <h2>Gában Hombre (Cafe)</h2>
+                <p>Precio: $ 210.000</p>
+                <button onclick="agregarProducto('Gában Hombre (Cafe)', 210000, 'imagenes/vestir7.jpg')">Agregar al carrito</button>
+            </div>
+
+            <div class="productos">
+                <img loading="lazy" src="imagenes/vestir8.jpg" alt="Producto 8" class="productos-img">
+                <h2>Chaqueta Mujer (Dorada)</h2>
+                <p>Precio: $ 350.000</p>
+                <button onclick="agregarProducto('Chaqueta Mujer (Dorada)', 350000, 'imagenes/vestir8.jpg')">Agregar al carrito</button>
+            </div>
+
+            <div class="productos">
+                <img loading="lazy" src="imagenes/vestir9.jfif" alt="Producto 9" class="productos-img">
+                <h2>Vestido Completo Mujer (Negro)</h2>
+                <p>Precio: $ 280.000</p>
+                <button onclick="agregarProducto('Vestido Completo Mujer (Negro)', 280000, 'imagenes/vestir9.jfif')">Agregar al carrito</button>
+            </div>
+
+            <div class="productos">
+                <img loading="lazy" src="imagenes/vestir10.jfif" alt="Producto 10" class="productos-img">
+                <h2>Vestido Completo Mujer (Blanco-Cafe)</h2>
+                <p>Precio: $ 298.000</p>
+                <button onclick="agregarProducto('Vestido Completo Mujer (Blanco-Cafe)', 298000, 'imagenes/vestir10.jfif')">Agregar al carrito</button>
+            </div>
+
+            <div class="productos">
+                <img loading="lazy" src="imagenes/vestir11.jfif" alt="Producto 11" class="productos-img">
+                <h2>Blusa Mujer (Amarillo)</h2>
+                <p>Precio: $ 110.000</p>
+                <button onclick="agregarProducto('Blusa Mujer (Amarillo)', 110000, 'imagenes/vestir11.jfif')">Agregar al carrito</button>
+            </div>
+
+            <div class="productos">
+                <img loading="lazy" src="imagenes/vestir12.jfif" alt="Producto 12" class="productos-img">
+                <h2>Buso Mujer (Verde)</h2>
+                <p>Precio: $ 180.000</p>
+                <button onclick="agregarProducto('Buso Mujer (Verde)', 180, 'imagenes/vestir12.jfif')">Agregar al carrito</button>
+            </div>
+        </div>
+    
+        <a href="carrito.html">Ver Carrito</a>
+    
+        <script>
+            function agregarProducto(nombre, precio, imagen) {
+                let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+                carrito.push({ nombre: nombre, precio: precio, imagen: imagen });
+                localStorage.setItem('carrito', JSON.stringify(carrito));
+                alert(nombre + ' ha sido agregado al carrito.');
+            }
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="leyenda">
+            <p>Inspirate y crea junto a nosotros</p>
+        </div>
+        
+    </main>
+
+    <footer>
+        <p>&copy; VORATEX S.A.S. Las mejores telas a tu alcance.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voratex S.A.S / Nosotros</title>
+    <link rel="stylesheet" href="styles_nosotros.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="nav-item">
+                    <a class="Voratex">Voratex S.A.S</a>
+                    <a class="Return" href="index.html">Página Principal</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="info-section">
+            <div class="text-content">
+                <h1>Quienes Somos:</h1>
+                <p>Voratex S.A.S es una empresa importadora y comercializadora de productos textiles, fundada el 18 de Agosto del 2024, 
+                   con el propósito de ofrecer productos para empresas, hogar e industrias de las más altas calidades e innovación. Contamos 
+                   con un capital humano orientado al desarrollo de productos diferenciales, guiados por las necesidades del mercado 
+                   y las tendencias tanto en el ámbito nacional como internacional.</p>
+            </div>
+        </section>
+
+        <section class="info-section">
+            <div class="text-content">
+                <h1>Nuestra Visión:</h1>
+                <p>Ser una empresa líder en múltiples segmentos del mercado como textiles de moda, lencería, tapicería y camisería en proyectos residenciales 
+                e institucionales, textiles con tecnología de punta, textiles de exterior, elaboración de prendas de vestir, calzado y marroquinería. 
+                Cumpliendo con estrictos estándares de calidad y competitividad.</p>
+            </div>
+            <img src="imagenes/nuestra_vision.jpg" alt="Nuestra_Vision" class="imagen">
+        </section>
+
+        <section class="info-section">
+            <div class="text-content">
+                <h1>Nuestra Misión:</h1>
+                <p>Innovar y diversificar nuestro portafolio, como resultado de una amplia investigación del mercado nacional e internacional, teniendo 
+                en cuenta como principal pilar el beneficio, calidad y precio, comprometidos siempre con nuestros clientes, los valores corporativos y 
+                la conservación del medio ambiente.</p>
+            </div>
+            <img src="imagenes/nuestra_mision.jpg" alt="Nuestra_Mision" class="imagen">
+        </section>
+
+        <section>
+        <div class="leyenda">
+            <p>Inspirate y crea junto a nosotros</p>
+        </div>
+        </section>
+
+        <div>
+            <li>
+                <h1>Trabaja con Nosotros</h1>
+                <p>"Es increíble lo que puedes lograr si no te importa quiés se lleva el crédito"-Harry Truman</p>
+            </li>
+        </div>
+
+        <section>
+            <form id="contactForm" onsubmit="return handleFormSubmit()">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="phone">Número Telefonico:</label>
+                <input type="text" id="phone" name="phone" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="address">Direccion:</label>
+                <input type="text" id="address" name="address" required>
+
+                <label for="message">Porque Quieres Trabajar Con Nosotros:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; VORATEX S.A.S. Las mejores telas a tu alcance.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
